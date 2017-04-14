@@ -1,10 +1,9 @@
-alert("Welcome to Insurance Buddy");
-
-const insValue = prompt("What the insurance value?");
-const insRate = prompt("What is the insurance rate? (Enter as decimal number)");
-
-const surCharge = insValue * insRate;
-const ept = surCharge * .036;
-const totalCharge = surCharge + ept;
-
-alert("Your total insuracne value is " + totalCharge);
+function total() {
+    let rte1 = parseFloat(document.getElementById('val$').value);
+    let rte2 = parseFloat(document.getElementById('valRate').value); 
+    let surCharge = rte1 * rte2; 
+    let ept = surCharge * .036;
+    let totalCharge = surCharge + ept;
+        
+    document.getElementById('price').value = "$" + totalCharge;
+};
