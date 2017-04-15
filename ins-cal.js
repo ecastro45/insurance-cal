@@ -7,3 +7,8 @@ function total() {
         
     document.getElementById('price').value = "$" + totalCharge;
 };
+
+// Grey background to input
+$(document).ready(function() {
+    $('input').css('background-color', '#ccc');
+});
