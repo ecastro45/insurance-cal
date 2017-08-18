@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gander Buddy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="styles.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
+</head>
+<body>
+    
+    <img src="img/G&W Small Logo.jpg" class="d-block mx-auto mb-5">
+
+    <p class="coll mt-4 text-primary">Enter Value:</p>
+	<input id="val$" type="text" name="rate1" class="d-block mx-auto">
+	
+    <p class="coll mt-4 text-primary">Enter Insurance Rate:</p>
+	<input id="valRate" type="text" name="rate2" class="d-block mx-auto" placeholder="Enter as decimal">
+	
+	<!-- Calculate Button -->
+	<button onclick="total()" type="button" class="btn btn-primary active d-block mx-auto mt-4">Calculate</button>
+	
+	<!-- Total -->
+	<p class="coll mt-5 text-primary">Total charges including IPT:</p>
+	<input id="price" type="text" name="gtotal" class="d-block mx-auto">
+
+    <!-- Clear Button -->
+    <div class="clearbtn">
+    <button type="button" id="clear" class="btn btn-primary active d-block mx-auto mt-5" onclick="clearit()">Clear</button>  
+    </div>  
+    
+	<!-- Back Button -->
+	<a href="main.html">	
+	<button type="button" id="back" class="btn btn-primary active d-block mx-auto mt-5">Back</button>
+	</a>
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
